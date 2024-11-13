@@ -64,6 +64,7 @@ body {
     background-color: #56b0e1;
     border: none;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .login:hover {
@@ -96,6 +97,7 @@ body {
     border: none;
     cursor: pointer;
     margin-left: 10px;
+    font-weight: 600;
 }
 
 .register:hover {

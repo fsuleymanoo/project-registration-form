@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+   .card {
+    max-width: 70%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+    
+    }
+
+
+
+    .login-place, .registration-place {
+        max-width: 50%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        min-height: 50vh;
+        padding: 0 20px;
+        }
+
+
+        .login-place {
+            background-color: #f1f1f1;
+            display: flex;
+            
+        }
+
+        
+
+.logo-image {
+    max-width: 120px;
+    overflow: hidden;
+}
+
+
+.login {
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: #56b0e1;
+    border: none;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #1d95d5;
+}
+
+.first-last-name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+    
+}
+
+.first-name, .last-name {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    line-height: 10px;
+    
+}
+
+
+.register {
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: #56b0e1;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.register:hover {
+    background-color: #1d95d5;
+}
+
+
+.email-password {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.email, .password {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 10px;
+    
+}
+
+
+.input-box {
+    height: 35px;
+    border-radius: 3px;
+    border: 2px solid rgba(128, 128, 128, 0.236);
+}
+
+
+.first-last-name, .email-password, .checkbox {
+    font-size: 18px;
+    color: gray;
+    padding: 10px;
+}
+
+
+.input-label {
+    padding: 10px 0 0 0;
+}
+
+
+.reg-header {
+    padding: 10px;
+}

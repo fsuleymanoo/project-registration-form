@@ -8,6 +8,7 @@ body {
     font-family: 'Teko', sans-serif;
 }
 
+/* place the container in the middle */
 .container {
     display: flex;
     justify-content: center;
@@ -16,16 +17,18 @@ body {
 }
 
 
+/* create flex items within the card */
    .card {
-    max-width: 70%;
-    min-height: 60vh;
+    max-width: 65%;
+    min-height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0 0 20px 0;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+    background: linear-gradient(to right, #f1f1f1 50%, white 50%);
     
     }
 
@@ -37,22 +40,13 @@ body {
         flex: 1;
         flex-direction: column;
         justify-content: space-around;
-        
         min-height: 50vh;
-        padding: 0 20px;
-        }
+        padding: 0 10px;
+        }   
 
-
-        .login-place {
-            background-color: #f1f1f1;
-            display: flex;
-            
-        }
-
-        
 
 .logo-image {
-    max-width: 120px;
+    max-width: 10vw;
     overflow: hidden;
 }
 
@@ -74,7 +68,7 @@ body {
 .first-last-name {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 6px;
   
     
 }
@@ -85,6 +79,7 @@ body {
     flex: 1;
     overflow: hidden;
     line-height: 10px;
+    overflow: hidden;
     
 }
 
@@ -98,6 +93,7 @@ body {
     cursor: pointer;
     margin-left: 10px;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .register:hover {
@@ -108,7 +104,7 @@ body {
 .email-password {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     
 }
 
@@ -125,6 +121,8 @@ body {
     height: 35px;
     border-radius: 3px;
     border: 2px solid rgba(128, 128, 128, 0.236);
+    overflow: hidden;
+    
 }
 
 
@@ -132,14 +130,24 @@ body {
     font-size: 18px;
     color: gray;
     padding: 10px;
+    overflow: hidden;
 }
 
 
 .input-label {
-    padding: 10px 0 0 0;
+    padding: 15px 0 0 0;
+    min-width: 80px;
 }
-
 
 .reg-header {
-    padding: 10px;
+    padding: 10px 0 0 10px;
+    max-width: 20vw;
 }
+
+    @media (max-width: 768px) {
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #f1f1f1 50%, white 50%);
+        }
+    }

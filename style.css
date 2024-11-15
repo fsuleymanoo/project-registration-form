@@ -158,8 +158,13 @@ body {
         align-items: flex-start;
     }
 
-    .first-last-name {
-        min-width: 150px;
+    .first-last-name,
+    .email-password {
+        min-width: 230px;
+    }
+
+    .checkbox {
+        min-width: 140px;
     }
 
     .logo-image {
@@ -174,5 +179,10 @@ body {
 
     .info-text {
         min-width: 200px;
+        margin-top: 40px;
+    }
+
+    .login {
+        margin-top: 80px;
     }
 }

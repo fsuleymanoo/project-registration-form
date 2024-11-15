@@ -18,7 +18,7 @@ body {
 
 
 /* create flex items within the card */
-   .card {
+.card {
     max-width: 65%;
     min-height: 65vh;
     display: flex;
@@ -27,22 +27,23 @@ body {
     padding: 0 0 20px 0;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     background: linear-gradient(to right, #f1f1f1 50%, white 50%);
-    
-    }
+
+}
 
 
 
-    .login-place, .registration-place {
-        max-width: 50%;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: space-around;
-        min-height: 50vh;
-        padding: 0 10px;
-        }   
+.login-place,
+.registration-place {
+    max-width: 50%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 50vh;
+    padding: 0 10px;
+}
 
 
 .logo-image {
@@ -69,18 +70,19 @@ body {
     display: flex;
     flex-direction: row;
     gap: 6px;
-  
-    
+
+
 }
 
-.first-name, .last-name {
+.first-name,
+.last-name {
     display: flex;
     flex-direction: column;
     flex: 1;
     overflow: hidden;
     line-height: 10px;
     overflow: hidden;
-    
+
 }
 
 
@@ -105,15 +107,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
 }
 
-.email, .password {
+.email,
+.password {
     display: flex;
     flex-direction: column;
     flex: 1;
     line-height: 10px;
-    
+
 }
 
 
@@ -122,11 +125,13 @@ body {
     border-radius: 3px;
     border: 2px solid rgba(128, 128, 128, 0.236);
     overflow: hidden;
-    
+
 }
 
 
-.first-last-name, .email-password, .checkbox {
+.first-last-name,
+.email-password,
+.checkbox {
     font-size: 18px;
     color: gray;
     padding: 10px;
@@ -144,10 +149,30 @@ body {
     max-width: 20vw;
 }
 
-    @media (max-width: 768px) {
-        .card {
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(to bottom, #f1f1f1 50%, white 50%);
-        }
+/* phone or small screen resulotion */
+@media (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #f1f1f1 50%, white 50%);
+        align-items: flex-start;
     }
+
+    .first-last-name {
+        min-width: 150px;
+    }
+
+    .logo-image {
+        min-width: 90px;
+    }
+
+    .reg-header {
+        font-size: 15px;
+        padding: 20px 0 0 10px;
+        margin-top: 160px;
+    }
+
+    .info-text {
+        min-width: 200px;
+    }
+}
